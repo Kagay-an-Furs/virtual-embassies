@@ -252,3 +252,14 @@ footer a:hover {
         text-align: center;
     }
 }
+
+.animate-on-load {
+    opacity: 0;
+    transform: translateY(30px); /* Starts slightly lower */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animate-on-load.visible {
+    opacity: 1;
+    transform: translateY(0); /* Slides into its original position */
+}
